@@ -1,0 +1,38 @@
+#include <iostream> 
+ 
+using namespace std;
+ 
+int main()
+{
+  char S;
+  int N;
+  cout << "Enter the direction symbol (“11” is north, “12” is west, “13” is south, “14” is east)<<endl ";
+  cin >> S;
+  cout << "Enter the digital command for the robot (0 - continue moving, 1 - turn left, -1 - turn right)<<endl ";
+  cin >> N;
+  cout << "direction "<<endl; 
+  switch (N) {
+    case 1: switch (S) {
+   		case '11': cout << "12"; break;
+   		case '13': cout << "14"; break;  
+   		case '12': cout << "13"; break;
+   		case '14': cout << "11"; break;
+    } break ;
+	case -1: switch (S) {
+   		case '11': cout << "14"; break;
+   		case '13': cout << "12"; break;  
+   		case '12': cout << "11"; break;
+   	    case '14': cout << "13"; break;
+	} break;
+	case 0: switch (S) {
+   		case '11': cout << "11"; break;
+   		case '12': cout << "12"; break;  
+   		case '13': cout << "13"; break;
+   	    case '14': cout << "14"; break;
+	} break;
+   }
+      
+   cout << endl; 
+   system ("pause");
+   return 0;
+}
