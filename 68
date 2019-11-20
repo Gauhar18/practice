@@ -1,0 +1,47 @@
+C++
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+#include <iostream>
+#include <math.h>
+using namespace std;
+ 
+int main () {
+    int a,b,c; 
+    double d;
+    cin >> a >> b >> c;
+    d=(b*b)-(4*a*c);
+    if (d>0){
+       int x1,x2;   
+       x1=(-b+sqrt(d))/(2*a);
+       x2=(-b-sqrt(d))/(2*a);
+       cout << "Two roots: " << ((x1>x2)? x2: x1) << " " << ((x1>x2)? x1: x2);
+    } 
+    else 
+       if (d==0){
+          cout << "One root:" << " " << -b/(2*a) << endl;
+       } 
+       else
+          cout << "No roots" << endl;
+    return 0;
+}
