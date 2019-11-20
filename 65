@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+ 
+ string Digitmove5(unsigned n, string s)
+{
+    string s1,s2;
+    while(n>0){
+        unsigned k=n%10;
+        if(k<5)
+          s1+=k+'0';
+        else
+          s2+=k+'0';
+        n/=10;
+    }
+    return s1+s2;
+ }
+int main()
+{
+     unsigned n=1000;
+     string s="";
+ 
+    cout<< Digitmove5(n,s);
+    system("pause");
+    return 0;
+}
