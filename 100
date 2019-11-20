@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int  main()
+{
+for (int i=1000;i<=9999;i++)
+   {
+   int n=i;
+   bool is56=false;
+   while(n>0 && !is56)
+       {
+       is56=is56||n%10==5||n%10==6;
+       n/=10;
+       }
+   if (!is56)
+     cout<<i<<' ';
+   }
+}
