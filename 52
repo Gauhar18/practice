@@ -1,0 +1,25 @@
+# practice
+practice
+#include <iostream>
+using namespace std;
+int main(){
+    int a;
+    int b;
+    int c;
+    cout<<"write num"<<endl;
+    cin>>a;
+    cin>>b;
+    cin>>c;
+    if (a==b+c){
+        cout<<"yes"<<endl;
+    }
+     if (b==a+c){
+        cout<<"yes"<<endl;
+    }
+     if (c==a+b){
+        cout<<"yes"<<endl;
+    }
+    return 0;
+    
+}
+        
