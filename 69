@@ -1,0 +1,27 @@
+
+#include <iostream>
+
+ 
+using namespace std;
+ 
+int main()
+{
+    int a, b, c;
+    cout << "write ";
+    cout << "A  "<<endl;; 
+    cin >> a;
+    cout << "B"<<endl; 
+    cin >> b;
+    cout << "C"<<endl;
+    cin >> c;
+    
+    if ( (b+c > a) || (a+c > b) || (a+b > c)) {
+        cout << "Trukytnuk sushhestvuet";
+    }
+    else
+        cout << "Trukytnuk ne sushhestvuet";
+    
+    
+    
+    return 0;
+}
