@@ -1,0 +1,12 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+ 
+int main()
+{
+    cout<<"Enter a : ";
+    int a;cin>>a;
+    cout<<"sin("<<a<<") = "<<sin(a)<<endl;
+    system("pause");
+    return 0;
+}
