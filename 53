@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main(){
+      double num;
+
+    cout << "Write number ";
+    cin >> num;
+
+    if (num > 30) // Если введенное число меньше 10.
+        cout << "Yes" << endl;
+ 
+    else  // иначе
+        cout << "NO" << endl;
+
+    return 0;
+}
+
