@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int a;
+    int b;
+    int c;
+    int d;
+    cout<<"write"<<endl;
+    cin>>a;
+    cin>>b;
+    cin>>c;
+    cin>>d;
+    if (a>5){
+        cout<<"yes"<<endl;
+    }
+    
+   if (b>5){
+        cout<<"yes"<<endl;
+    }
+      if (c/6){
+        cout<<"yes"<<endl;
+    }
+      if (d/!3){
+        cout<<"yes"<<endl;
+    }
+    else  
+        cout << "No." << endl;
+
+    return 0;
+}
