@@ -1,0 +1,31 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+    int main() {
+           
+    int Day;
+    int Month;
+    int Year;                           
+             
+    
+    while(1){
+    
+    cout << "write day ";
+    cin >> Day;
+    cout << "write month ";
+    cin >> Month;
+    cout << "write year ";
+    cin >> Year;
+    cout << Day << " " << Month << " " << Year << endl;
+ 
+    if (Day >= 1 && Day <=31 && Month >= 01 && Month <= 12 && Year >= 1900 && Year <=  2100) 
+    cout << "YES!" << endl;
+    
+    else 
+        cout << "NO! " << endl;
+        break;
+    
+    }
+    return 0;
+    }
